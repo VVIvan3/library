@@ -71,11 +71,11 @@ function displayBooks(bookArray) {
 
         const cardAuthor = document.createElement('p');
         cardAuthor.setAttribute('class', 'author');
-        cardAuthor.textContent = book.author;
+        cardAuthor.textContent = `by ${book.author}`;
 
         const cardPages = document.createElement('p');
         cardPages.setAttribute('class', 'pages');
-        cardPages.textContent = book.pages;
+        cardPages.textContent = `${book.pages} pages`;
 
         const cardStatus = document.createElement('p');
         cardStatus.setAttribute('class', 'bookstatus');

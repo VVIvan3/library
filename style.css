@@ -3,6 +3,7 @@
     --bg-stone: #a8a29e;
     --bg-white: #f4f4f5;
     --orange: #fdba74;
+    --dark-gray: #6b7280;
 }
 
 
@@ -33,12 +34,22 @@ body {
     background: var(--bg-stone);
     padding-top: 1rem;
     justify-items: center;
+    box-shadow: 0px 1px 10px 3px var(--dark-gray);
 }
 
 input[type="text"],
 input[type="number"] {
     width: 80%;
     height: 2rem;
+    border: none;
+    border-radius: 10px;
+    background-color: #fef08a;
+    font-weight: bold;
+}
+
+input:focus {
+    border: solid rgb(33, 33, 177) 2px;
+    box-shadow: 0px 0px 5px 1px rgb(33, 33, 177);
 }
 
 .library {
@@ -80,8 +91,16 @@ input[type="number"] {
     background: red;
 }
 
+#status:hover {
+    background-color: rgb(219, 70, 70);
+}
+
 #settingsbox .pressed {
     background: green;
+}
+
+#settingsbox .pressed:hover {
+    background: rgb(25, 112, 25);
 }
 
 .heading {
@@ -104,4 +123,36 @@ input[type="number"] {
 .control {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    align-items: stretch;
+    justify-items: center;
+    margin-left: 1%;
+}
+
+.control button {
+    font-style: italic;
+    border-radius: 5px;
+    border: solid 1px var(--bg-stone);
+}
+
+.deletion:hover {
+    background-color: rgb(163, 66, 66);
+    border: solid 1px red;
+}
+
+.statuschange:hover {
+    background-color: #ad9789;
+}
+
+.settings button {
+    height: 3rem;
+    width: 70%;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 1px 1px 5px 2px var(--dark-gray);
+    font-weight: bolder;
+    font-size: larger;
+}
+
+#addbook:hover {
+    background-color: rgb(187, 166, 166);
 }
