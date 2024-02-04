@@ -43,6 +43,7 @@ input[type="number"] {
 
 .library {
     display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 230px));
     grid-auto-columns: minmax(200px, 230px);
     grid-auto-rows: minmax(250px, 325px);
     padding: 0.5rem;
@@ -65,4 +66,12 @@ input[type="number"] {
     position: absolute;
     border-radius: 10px 10px 0px 0px;
     box-shadow: 0px 3px 15px 0px var(--bg-stone);
+}
+
+#status {
+    background: red;
+}
+
+#settingsbox .pressed {
+    background: green;
 }
