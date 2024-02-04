@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Freehand&display=swap');
+
 :root {
     --bg-gray: #e7e5e4;
     --bg-stone: #a8a29e;
@@ -108,7 +110,9 @@ input:focus {
 }
 
 .heading {
-    font-weight: bolder;
+    /* font-weight: bolder; */
+    font-size: larger;
+    font-family: 'Freehand', cursive;
 }
 
 .author {
