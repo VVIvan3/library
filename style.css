@@ -110,7 +110,6 @@ input:focus {
 }
 
 .heading {
-    /* font-weight: bolder; */
     font-size: larger;
     font-family: 'Freehand', cursive;
 }
