@@ -7,12 +7,14 @@ const addBookBtn = document.querySelector('#addbook');
 
 const library = [];
 
-function Book(title, author, pages = "-", status = false) {
-    this.title = title;
-    this.author = author;
-    this.pages = pages;
-    this.status = status;
-    this.read = function() {
+class Book {
+    constructor(title, author, pages = "-", status = false) {
+        this.title = title;
+        this.author = author;
+        this.pages = pages;
+        this.status = status;
+    }
+    read() {
         if (this.status === false) {
             this.status = true;
         } else {
